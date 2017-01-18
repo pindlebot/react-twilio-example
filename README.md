@@ -1,5 +1,12 @@
 # react-twilio-example
-Barebones example to demonstrate how you can use twilio to send SMS in ReactJS. 
+Barebones example to demonstrate how you can use twilio to send SMS in ReactJS. Read the full tutorial [here](http://www.automationfuel.com/reactjs-twilio-example-tutorial/).
+
+### This sample project uses: 
+- ReactJS
+- Express and Node.js
+- NPM
+- Webpack
+- Fetch
 
 ## Quick Start
 
@@ -37,8 +44,9 @@ Build and start the server:
 ```
 webpack && node server.js
 ```
+Finally, go to http://localhost:3000/.
 
-Once the server is started, prove to yourself that it works by entering your phone number in the input box. You should receive an SMS.
+Once the server is started, prove to yourself that it works by entering your phone number in the input box. You should receive an SMS!
 
 
 

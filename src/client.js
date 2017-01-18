@@ -25,11 +25,13 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div><input onChange={this.changeInput.bind(this)} value={this.state.recipient} />
+      <div>
+        <p>Enter phone number to send SMS to: </p>
+      <input onChange={this.changeInput.bind(this)} value={this.state.recipient} placeholder="+12223334444"/>
         <button onClick={this
           .sendSms
           .bind(this)}>Send message</button>
-          {this.state.recipient}
+          <p>Don't forget your country code, e.g., +1.</p>
       </div>
     );
   }
