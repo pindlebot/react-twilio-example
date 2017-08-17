@@ -1,4 +1,6 @@
 # react-twilio-example
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/focuswish/react-twilio-example.svg)](https://greenkeeper.io/)
 Barebones example to demonstrate how you can use twilio to send SMS in ReactJS. Read the full tutorial [here](http://www.automationfuel.com/reactjs-twilio-example-tutorial/).
 
 ### This sample project uses: 
