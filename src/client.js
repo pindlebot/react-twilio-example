@@ -39,7 +39,7 @@ class App extends React.Component {
           placeholder="+12223334444"
         />
         <button onClick={this.sendSms}>Send message</button>
-        <p>Don't forget your country code, e.g., +1 in the US.</p>
+        <p>Don\'t forget your country code, e.g., +1 in the US.</p>
       </div>
     );
   }
