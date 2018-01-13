@@ -2,7 +2,10 @@ require('dotenv').config()
 const express = require('express')
 const path = require('path')
 const bodyParser = require('body-parser')
+const Bundler = require('parcel-bundler')
+const PORT = Number(process.env.PORT || 1234)
 
+let bundler = new Bundler('src/index.html')
 let app = express()
 
 app.use(bodyParser.json())
@@ -20,7 +23,7 @@ app.post('/api/send', (req, res) => {
 
   client.sendMessage({
     to: req.body.recipient,
-    from: SENDER
+    from: SENDER,
     body: 'word to your mother.'
   }, (err, responseData) => {
     if (!err) {
@@ -32,4 +35,6 @@ app.post('/api/send', (req, res) => {
   })
 })
 
-app.listen(3000)
+app.use(bundler.middleware())
+
+app.listen(PORT)

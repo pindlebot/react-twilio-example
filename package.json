@@ -4,7 +4,7 @@
   "description": "How to use twilio with React.",
   "main": "parcel.js",
   "scripts": {
-    "start": "node --harmony parcel.js"
+    "start": "node --harmony server.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,6 @@
     "body-parser": "^1.18.2",
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
-    "http-proxy-middleware": "^0.17.4",
     "parcel-bundler": "^1.4.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
